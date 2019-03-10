@@ -1,0 +1,61 @@
+{% extends 'base.html' %} {% block content%} {% for recipe in recipes %} {{recipe.recipe_name}} {{recipe.category_name}} {{recipe.recipe_publisher}} {{recipe.recipe_img}} {{recipe.recipeurl_site}} {% endfor %}
+<div class="container">
+  <div class="row">
+    <div class="card small col s6">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="/static/img/JalapenoGrilledCheeseSandwich.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Jalapeno Grilled Cheese Sandwich<i class="material-icons right">expand_more</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+    <div class="card small col s6">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="/static/img/BaconWrappedJalapenoStuffedChicken.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Bacon Wrapped Jalapeno Chicken<i class="material-icons right">expand_more</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card col small s6">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="/static/img/smashedchickpeaavocadosaladsandwich.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Smashed Chickpea Avocado Sandwich<i class="material-icons right">expand_more</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+    <div class="card col small s6">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="/static/img/shepherdspie.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Easy Made Shepards Pie<i class="material-icons right">expand_more</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

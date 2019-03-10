@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="recipes.html" class="brand-logo">RecipeApp</a>
+          <ul class="right hide-on-med-and-down">
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Recipe Category<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#!">Add Recipe</a></li>
+            <li><a href="#!">Login</a></li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+    <div class= "container">
+      <div class="row">
+        <h2 class='center-align'>Recipes!</h2>
+        {% block content %} {% endblock %}
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="footer">
+
+        Created By Kevin Gurol with <a class="blue-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      
+
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(".dropdown-trigger").dropdown();
+      $(document).ready(function() {
+        $('select').formSelect();
+      });
+      $(document).ready(function() {
+        $('.modal').modal();
+      });
+    </script>
+
+    <body>
+
+</html>
