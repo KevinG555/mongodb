@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %} {% block content%} {{recipe.recipe_name}} {{recipe.category_name}} {{recipe.recipe_ingredients}}
+{{recipe.recipe_direction}} {{recipe.recipe_img}} {{recipe_preptime}} {{recipe_cook}}
+{{recipe_person}}
+{% endfor %}
+
+<div class="row">
+  {% for recipe in recipes %} 
+  <div class="card-panel center teal white-text lighten-2"><h4>Category: {{recipe.category_name}}</h3></div>
+    <div class="col s6 m6">
+       
+      <div class="card">
+        <div class="recipe-name">
+          <span class="card-title teal-text">{{recipe.recipe_name}}</span>
+          <p><strong>Prep Time:</strong><i class="tiny material-icons">timer</i>{{recipe_preptime}}<br><strong>Cook Time:</strong><i class="tiny material-icons">access_time</i>{{recipe_cook}}<br><i class="tiny material-icons">person</i>{{recipe_person}}</p>
+        </div>
+        <div class="recipe-ingredients">
+          <p>{{recipe.recipe_ingredients}}</p>
+        </div>
+        <div class="recipe-direction">
+          <p>{{recipe.recipe_direction}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+            
+{% endblock %}
