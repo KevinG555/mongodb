@@ -1,0 +1,68 @@
+{% extends 'base.html' %} {% block content%}
+
+  <div class="card-panel center teal white-text lighten-2"><h4>Add Recipe</h3></div>
+<div class="row">
+      <form action="" method="POST" class="col s12">
+         <label blue-text >Recipe Category</label>
+        <select class="browser-default">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Sandwich</option>
+            <option value="2">Pasta</option>
+            <option value="3">Vegetarian</option>
+            <option value="4">Cake</option>
+          </select>
+        <div class="row">
+              <div class="input-field col s12">
+                <input id="input_text" type="text" data-length="25">
+                <label for="input_text">Recipe Name</label>
+              </div>
+        </div>
+        <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+          <i class="material-icons prefix">timer</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Prep Time mins</label>
+        </div>
+        <div class="input-field col s4">
+          <i class="material-icons prefix">access_time</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Cook Time</label>
+        </div>
+        <div class="input-field col s4">
+          <i class="material-icons prefix">person</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">For how many people ?</label>
+        </div>
+      </div>
+    </form>
+  </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+            <label for="textarea2">Ingredients</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+            <label for="textarea2">Recipe Directions</label>
+          </div>
+        </div>
+            <form action="#">
+            <div class="file-field input-field col6">
+              <div class="btn center">
+                <span> <i class="material-icons">cloud_upload</i> Upload Image(.jpg)</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+            </form>
+      </form>
+    </div>
+          
+
+{% endblock %}

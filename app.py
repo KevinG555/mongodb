@@ -19,7 +19,11 @@ def get_recipes():
 def sandwiches():
     return render_template("sandwiches.html", recipes=mongo.db.recipes.find({"category_name": "Sandwich"}))    
         
-            
+
+@app.route('/addrecipe')
+def addrecipe():
+    return render_template("addrecipe.html")
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

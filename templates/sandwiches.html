@@ -1,8 +1,5 @@
 
-{% extends 'base.html' %} {% block content%} {{recipe.recipe_name}} {{recipe.category_name}} {{recipe.recipe_ingredients}}
-{{recipe.recipe_direction}} {{recipe.recipe_img}} {{recipe_preptime}} {{recipe_cook}}
-{{recipe_person}}
-{% endfor %}
+{% extends 'base.html' %} {% block content%}
 
 <div class="row">
   {% for recipe in recipes %} 
@@ -11,8 +8,14 @@
        
       <div class="card">
         <div class="recipe-name">
+          <div class="card tiny">
+         <div class="card-image">
+             <img class="responsive-img" src="{{recipe.recipe_image_url}}">
+          </div>
+          </div>
           <span class="card-title teal-text">{{recipe.recipe_name}}</span>
-          <p><strong>Prep Time:</strong><i class="tiny material-icons">timer</i>{{recipe_preptime}}<br><strong>Cook Time:</strong><i class="tiny material-icons">access_time</i>{{recipe_cook}}<br><i class="tiny material-icons">person</i>{{recipe_person}}</p>
+          
+          <p><strong>Prep Time:</strong><i class="tiny material-icons">timer</i>{{recipe.recipe_preptime}} mins<br><strong>Cook Time:</strong><i class="tiny material-icons">access_time</i> {{recipe.recipe_cook}} mins<br><i class="tiny material-icons">person</i>{{recipe.recipe_person}} person</p>
         </div>
         <div class="recipe-ingredients">
           <p>{{recipe.recipe_ingredients}}</p>
