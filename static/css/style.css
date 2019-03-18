@@ -10,10 +10,7 @@ body {
     flex: 1 0 auto;
   }
   
-.container-base {
-  background-image: url('/static/img/woodpexel.jpeg')
-  
-}
+
 
   
 responsive-img {
