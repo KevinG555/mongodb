@@ -23,6 +23,10 @@ def sandwiches():
 def cakes():
     return render_template("cakes.html", recipes=mongo.db.recipes.find({"category_name": "Cake"}))        
         
+@app.route("/pastas")
+def pastas():
+    return render_template("pasta.html", recipes=mongo.db.recipes.find({"category_name": "Pasta"})) 
+
 
 @app.route("/add_recipe")
 def add_recipe():
