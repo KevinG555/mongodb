@@ -27,6 +27,9 @@ def cakes():
 def pastas():
     return render_template("pasta.html", recipes=mongo.db.recipes.find({"category_name": "Pasta"})) 
 
+@app.route("/vegan")
+def vegan():
+    return render_template("vegan.html", recipes=mongo.db.recipes.find({"category_name": "Vegetarian"}))
 
 @app.route("/add_recipe")
 def add_recipe():
