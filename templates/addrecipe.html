@@ -4,12 +4,11 @@
 <div class="row">
       <form action="" method="POST" class="col s6">
          <label>Recipe Category</label>
-        <select id="category_name" name="category_name" class="browser-default">
+        <select id="category" name="category_name" class="browser-default">
             <option value="" disabled selected>Choose your option</option>
-            <option value="1">Sandwich</option>
-            <option value="2">Pasta</option>
-            <option value="3">Vegetarian</option>
-            <option value="4">Cake</option>
+            {% for cat in categories %}
+            <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+            {% endfor %}
           </select>
         <div class="row">
               <div class="input-field col s12">
@@ -53,15 +52,19 @@
             <label for="textarea2">Recipe Directions</label>
           </div>
         </div>
-           
-            <div class="file-field input-field col6">
+            <div class="file-field input-field col s10">
               <div class="btn center">
                 <span> <i class="material-icons">cloud_upload</i> Upload Image(.jpg)</span>
                 <input type="file">
               </div>
               <div class="file-path-wrapper">
-                <input id ="recipe_img" name="recipe_img" class="file-path validate" type="text">
+                <input id ="recipe_img" name="recipe_img"class="file-path validate" type="text">
               </div>
+            </div>
+            <div class="row center col s12">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit Your Recipe
+            <i class="material-icons right">send</i>
+        </button>
             </div>
       </form>
     </div>
