@@ -10,7 +10,7 @@ body {
     flex: 1 0 auto;
   }
   
-container-base {
+.container-base {
   background-image: url('/static/img/woodpexel.jpeg')
   
 }
@@ -23,3 +23,6 @@ max-height: auto;
   
 }
 
+.navbar {
+  margin:0 ;
+}

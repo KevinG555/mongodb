@@ -13,10 +13,10 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="navbar">
     <div class="nav-wrapper">
       <ul id="dropdown1" class="dropdown-content">
-        <li><a href="/sandwiches.html">Sandwich</a></li>
+        <li><a href="{{url_for('sandwiches')}}">Sandwich</a></li>
         <li><a href="#!">Pasta</a></li>
         <li><a href="#!">Vegetarian</a></li>
         <li class="divider"></li>
@@ -24,11 +24,11 @@
       </ul>
       <nav>
         <div class="nav-wrapper">
-          <a href="recipes.html" class="brand-logo">ZestyApp</a>
+          <a href="{{url_for('get_recipes')}}" class="brand-logo">ZestyApp</a>
           <ul class="right hide-on-med-and-down">
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Recipe Categories<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="addrecipe.html">Add Recipe</a></li>
+            <li><a href="{{url_for('add_recipe')}}">Add Recipe</a></li>
             <li><a href="#!">Login</a></li>
           </ul>
         </div>
@@ -52,16 +52,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-      $(".dropdown-trigger").dropdown();
-      $(document).ready(function() {
+        $(document).ready(function() {
+        $(".dropdown-trigger").dropdown();
         $('select').formSelect();
-      });
-      $(document).ready(function() {
         $('.modal').modal();
-      });
-      $(document).ready(function() {
-    $('input#input_text, textarea#textarea2').characterCounter();
-  });
+        $('input#input_text, textarea#textarea2').characterCounter();
+        });
     </script>
 
     <body>
