@@ -16,7 +16,7 @@
   <nav>
     <div class="nav-wrapper">
       <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">Sandwich</a></li>
+        <li><a href="/sandwiches.html">Sandwich</a></li>
         <li><a href="#!">Pasta</a></li>
         <li><a href="#!">Vegetarian</a></li>
         <li class="divider"></li>
@@ -28,7 +28,7 @@
           <ul class="right hide-on-med-and-down">
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Recipe Categories<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="#!">Add Recipe</a></li>
+            <li><a href="addrecipe.html">Add Recipe</a></li>
             <li><a href="#!">Login</a></li>
           </ul>
         </div>
@@ -36,7 +36,6 @@
       </nav>
       <div class= "container-base">
       <div class="row">
-        <h2 class='center-align'>Recipes!</h2>
         {% block content %} {% endblock %}
       </div>
     </div>
@@ -60,6 +59,9 @@
       $(document).ready(function() {
         $('.modal').modal();
       });
+      $(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
+  });
     </script>
 
     <body>

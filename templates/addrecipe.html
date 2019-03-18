@@ -2,7 +2,7 @@
 
   <div class="card-panel center teal white-text lighten-2"><h4>Add Recipe</h3></div>
 <div class="row">
-      <form action="" method="POST" class="col s12">
+      <form action="" method="POST" class="col s6">
          <label blue-text >Recipe Category</label>
         <select class="browser-default">
             <option value="" disabled selected>Choose your option</option>
@@ -13,7 +13,8 @@
           </select>
         <div class="row">
               <div class="input-field col s12">
-                <input id="input_text" type="text" data-length="25">
+                 <i class="material-icons prefix">subject</i>
+                <input id="recipe_name" name="recipe_name" type="text" data-length="25">
                 <label for="input_text">Recipe Name</label>
               </div>
         </div>
@@ -22,35 +23,37 @@
       <div class="row">
         <div class="input-field col s4">
           <i class="material-icons prefix">timer</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Prep Time mins</label>
+          <input id="recipe_preptime" name="recipe_preptime" type="text" class="validate">
+          <label for="icon_prefix">Prep Time (in mins)</label>
         </div>
         <div class="input-field col s4">
           <i class="material-icons prefix">access_time</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Cook Time</label>
+          <input id="recipe_cook" name="recipe_cook" type="tel" class="validate">
+          <label for="icon_telephone">Cook Time (in mins)</label>
         </div>
         <div class="input-field col s4">
           <i class="material-icons prefix">person</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">For how many people ?</label>
+          <input id="recipe_person" name="recipe_person" type="tel" class="validate">
+          <label for="icon_telephone">Person</label>
         </div>
       </div>
     </form>
   </div>
         <div class="row">
           <div class="input-field col s12">
-            <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+             <i class="material-icons prefix">subject</i>
+            <textarea id="recipe_ingredients" name="recipe_ingredients" class="materialize-textarea" data-length="120"></textarea>
             <label for="textarea2">Ingredients</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+             <i class="material-icons prefix">subject</i>
+            <textarea id="recipe_direction" name="recipe_direction" class="materialize-textarea" data-length="120"></textarea>
             <label for="textarea2">Recipe Directions</label>
           </div>
         </div>
-            <form action="#">
+           
             <div class="file-field input-field col6">
               <div class="btn center">
                 <span> <i class="material-icons">cloud_upload</i> Upload Image(.jpg)</span>
@@ -60,7 +63,6 @@
                 <input class="file-path validate" type="text">
               </div>
             </div>
-            </form>
       </form>
     </div>
           
