@@ -77,9 +77,9 @@ This website was created with the intention to store and easily share recipes. T
   
   1.Install "reqirements.txt" file with the command;
   
-  ,,,
+   ```
    pip3 freeze --local requirements.txt
- ,,,
+   ```
    
   2.Create "Procfile" with the command;
   '''
