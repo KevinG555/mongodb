@@ -95,8 +95,7 @@ This website was created with the intention to store and easily share recipes. T
   
   4.Create new Heroku app using command;
   
- '''
- heroku apps:create appname 
+ '''heroku apps:create appname 
  '''
   
   5.Before pushing to Heroku;
