@@ -3,9 +3,8 @@
 <div class="container">
 <div class="row">
   {% for recipe in recipes %} 
-  <div class="card-panel center teal white-text lighten-2"><h4>Category: {{recipe.category_name}}</h3></div>
     <div class="col s6 m6">
-       
+         <div class="card-panel center teal white-text lighten-2"><h4>Category: {{recipe.category_name}}</h3></div>
       <div class="card">
         <div class="recipe-name">
           <div class="card tiny">
@@ -24,8 +23,8 @@
           <p>{{recipe.recipe_direction}}</p>
         </div>
       </div>
-      {% endfor %}
-    </div>
+      </div>
+    {% endfor %}
   </div>
 </div>          
 {% endblock %}

@@ -1,11 +1,10 @@
 
 {% extends 'base.html' %} {% block content%}
 <div class="container">
-<div class="row">
-  {% for recipe in recipes %} 
-  <div class="card-panel center teal white-text lighten-2"><h4>Category: {{recipe.category_name}}</h3></div>
+  <div class="row">
+   {% for recipe in recipes %} 
     <div class="col s6 m6">
-       
+       <div class="card-panel center teal white-text lighten-2"><h4>Category: {{recipe.category_name}}</h3></div> 
       <div class="card">
         <div class="recipe-name">
           <div class="card tiny">
@@ -14,7 +13,6 @@
           </div>
           </div>
           <span class="card-title teal-text">{{recipe.recipe_name}} <img class="circle" src="/static/img/threeleaf48.png"></span>
-          
           <p><strong>Prep Time:</strong><i class="tiny material-icons">timer</i>{{recipe.recipe_preptime}} mins<br><strong>Cook Time:</strong><i class="tiny material-icons">access_time</i> {{recipe.recipe_cook}} mins<br><i class="tiny material-icons">person</i>{{recipe.recipe_person}} person</p>
         </div>
         <div class="recipe-ingredients">
@@ -24,8 +22,8 @@
           <p>{{recipe.recipe_direction}}</p>
         </div>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
 </div>          
 {% endblock %}
