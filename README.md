@@ -82,43 +82,40 @@ This website was created with the intention to store and easily share recipes. T
    ```
    
   2.Create "Procfile" with the command;
-  '''
+  ```
   echo web: python app.py > Procfile
-  '''
+  ```
   
   3.Via Linux Terminal, login to Heroku,
-  '''
+  ```
   heroku login
-  '''
+  ```
   
-  Input Heroku login details and connect to Heroku.
+   Input Heroku login details and connect to Heroku.
   
   4.Create new Heroku app using command;
-  
- '''heroku apps:create appname 
- '''
+   ```
+    heroku apps:create appname 
+   ```
   
   5.Before pushing to Heroku;
   
-  '''
+  ```
    git init .
    git add .
    git commit -m "explanation note" .
    git push heroku master
-   
-   '''
+   ```
   
   6.Create scale, with command;
-  
- 
- '''
- heroku ps:scale web=1
- '''
+   ```
+   heroku ps:scale web=1
+   ```
   
   7. Select settings from heroku and then select 
-  '''
- ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
-  '''
+    ```
+   ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
+    ```
   
   ## Credits ##
   
