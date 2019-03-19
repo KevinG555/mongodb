@@ -61,7 +61,7 @@ This website was created with the intention to store and easily share recipes. T
   
   Heroku is a cloud platform as a service supporting several programming languages. Heroku, one of the first cloud platforms, has been in   development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure,         Python, PHP, and Go.
   
-  [Git](https://github.com/)
+  [Git](https://github.com/) :octocat:
   
   GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It is used for the verson       control.
   
