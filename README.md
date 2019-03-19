@@ -63,7 +63,7 @@ This website was created with the intention to store and easily share recipes. T
   
   [Git](https://github.com/) :octocat:
   
-  GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It is used for the verson       control.
+  GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It is used for the version       control.
   
   [Cloud 9](https://c9.io)
   
@@ -77,9 +77,9 @@ This website was created with the intention to store and easily share recipes. T
   
   1.Install "reqirements.txt" file with the command;
   
-  '''
+  ,,,
    pip3 freeze --local requirements.txt
-  '''
+ ,,,
    
   2.Create "Procfile" with the command;
   '''
