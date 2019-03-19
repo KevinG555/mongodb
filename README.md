@@ -15,6 +15,12 @@ This website was created with the intention to store and easily share recipes. T
 ## Features ##
 * Any recipe can added according to their categories, names, preparation time, cook time, igredients and directions whilst uploading image in jpeg.
 * It can be navigated eitherby clicking on the cards or a category can be chosen from the navigation bar "Recipe Categories" tab.
+
+## Features to implement ##
+ * Videos - The ability to attach videos to the recipes so that the users can upload video instructions for their recipes or the can embed links.
+
+* Blog - The users can get updates,stories and feedback from users of the applications.
+* Social Media reviews from the users.
  
 
 
