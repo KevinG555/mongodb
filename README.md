@@ -25,6 +25,26 @@ This website was created with the intention to store and easily share recipes. T
 ## Technologies Used ##
 
 * [Materialize](https://materializecss.com/)
+
+  A modern responsive front-end framework based on Material Design
  
+* [Python](https://www.python.org/)
+  
+  Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+  You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.
+  
+* [MongoDB](https://www.mongodb.com/)
+
+  MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing.
+  
+  * MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be         changed over time
+
+  * The document model maps to the objects in your application code, making data easy to work with
+
+  * Ad hoc queries, indexing, and real time aggregation provide powerful ways to access and analyze your data
+
+  * MongoDB is a distributed database at its core, so high availability, horizontal scaling, and geographic distribution are built in and     easy to use
+
+  * MongoDB is **free and open-source.** 
 
 
