@@ -21,6 +21,10 @@ This website was created with the intention to store and easily share recipes. T
 
 * Blog - The users can get updates,stories and feedback from users of the applications.
 * Social Media reviews from the users.
+
+## Technologies Used ##
+
+* [Materialize](https://materializecss.com/)
  
 
 
