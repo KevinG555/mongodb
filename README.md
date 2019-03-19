@@ -75,9 +75,43 @@ This website was created with the intention to store and easily share recipes. T
   
   ## Deployment ##
   
-  1.Install reqirements.txt file
+  1.Install "reqirements.txt" file with the command;
   
    > > pip3 freeze --local requirements.txt
+   
+  2.Create "Procfile" with the command;
+  
+  > >  echo web: python app.py > Procfile
+  
+  3.Via Linux Terminal, login to Heroku,
+  
+   > > 'heroku login'
+  
+  Input Heroku login details and connect to Heroku.
+  
+  4.Create new Heroku app using coomand;
+  
+  > > 'heroku apps:create appname' 
+  
+  5. Before pushing to Heroku;
+  
+  > > git init .
+  > > git add .
+  > > git commit -m "explanation note" .
+  > > git push heroku master
+  
+  6. Create scale, with command;
+  
+  > > 'heroku ps:scale web=1'
+  
+  7. Select settings from heroku and then select 
+  
+  > > ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
+  
+  ## Credits ##
+  
+  The recipes and photos are taken from [food2fork](https://www.food2fork.com) and inspired from different recipes.
+  
 
   
  
