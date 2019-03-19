@@ -77,9 +77,9 @@ This website was created with the intention to store and easily share recipes. T
   
   1. Install reqirements.txt file
   
-  --------------------------------------
-   pip3 freeze --local requirements.txt
-  --------------------------------------
+ 
+   >> pip3 freeze --local requirements.txt
+
   
  
   
