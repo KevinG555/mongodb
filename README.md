@@ -65,6 +65,22 @@ This website was created with the intention to store and easily share recipes. T
   
   GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It is used for the verson       control.
   
+  [Cloud 9](https://c9.io)
+  
+  AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser.   It includes a code editor, debugger, and terminal.
+  
+  ## Testing ##
+  
+  On mobile Phones links in the cards don't show up if Recipe Name is too long. It is tested by [Chrome Dev Tools]     (https://developers.google.com/web/tools/chrome-devtools/) for each screen size and it's responsive.
+  
+  ## Deployment ##
+  
+  1. Install reqirements.txt file
+  
+  --------------------------------------
+   pip3 freeze --local requirements.txt
+  --------------------------------------
+  
  
   
   
