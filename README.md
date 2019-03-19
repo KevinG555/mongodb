@@ -112,7 +112,7 @@ This website was created with the intention to store and easily share recipes. T
    heroku ps:scale web=1
    ```
   
-  7. Select settings from heroku and then select 
+  7.Select settings from heroku and then select 
     ```
    ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
     ```
