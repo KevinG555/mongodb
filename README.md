@@ -46,5 +46,25 @@ This website was created with the intention to store and easily share recipes. T
   * MongoDB is a distributed database at its core, so high availability, horizontal scaling, and geographic distribution are built in and     easy to use
 
   * MongoDB is **free and open-source.** 
+  
+  [mLab](https://mlab.com)
+  
+  mLab is a fully managed cloud database service featuring automated provisioning and scaling of MongoDB databases, backup and recovery,     24/7 monitoring and alerting, web-based management tools, and expert support. mLab's Database-as-a-Service platform powers hundreds of     thousands of databases across AWS, Azure, and Google and allows developers to focus their attention on product development instead of     operations.
+
+  Since its inception seven years ago, mLab has grown like wildfire and now manages over 900,000 databases across three major cloud         providers in 43 datacenters worldwide.
+  
+  [Flask-PyMongo](https://pypi.org/project/Flask-PyMongo/)
+  
+  MongoDB is an open source database that stores flexible JSON-like “documents,” which can have any number, name, or hierarchy of fields     within, instead of rows of data as in a relational database. Python developers can think of MongoDB as a persistent, searchable           repository of Python dictionaries (and, in fact, this is how PyMongo represents MongoDB documents). Flask-PyMongo bridges Flask and       PyMongo and provides some convenience helpers.
+  
+  [Heroku](https://heroku.com)
+  
+  Heroku is a cloud platform as a service supporting several programming languages. Heroku, one of the first cloud platforms, has been in   development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure,         Python, PHP, and Go.
+  
+  
+  
+  
+  
+  
 
 
