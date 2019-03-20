@@ -19,11 +19,11 @@ This website was created with the intention to store and easily share recipes. T
 
 ### Category Page ###
 
-![](images/static/category_page.png)
+![](/static/img/category_page.png)
 
 ### Add Recipe Page
 
-![](images/static/add_recipe.png)
+![](/static/img/add_recipe.png)
 
 ## Features ##
 * Any recipe can added according to their categories, names, preparation time, cook time, igredients and directions whilst uploading image in jpeg.
