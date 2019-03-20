@@ -1,9 +1,5 @@
 # ZestyApp - Code Institute Milestone Project #
 
-## Wireframes ##
-
-![Wireframezestyapp](img/index.png)
-
 ## Overview ##
 This app is created in Python and Flask
 
@@ -15,6 +11,19 @@ This website was created with the intention to store and easily share recipes. T
 * Pasta
 * Vegetarian
 * Cake
+
+## Wireframes ##
+
+### index Page ###
+![](images/static/images/index.png)
+
+### Category Page ###
+
+![](images/static/category_page.png)
+
+### Add Recipe Page
+
+![](images/static/add_recipe.png)
 
 ## Features ##
 * Any recipe can added according to their categories, names, preparation time, cook time, igredients and directions whilst uploading image in jpeg.
