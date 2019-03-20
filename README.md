@@ -2,7 +2,7 @@
 
 ## Wireframes ##
 
-![Wireframezestyapp](images/index.png)
+![Wireframezestyapp](img/index.png)
 
 ## Overview ##
 This app is created in Python and Flask
