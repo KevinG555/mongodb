@@ -15,7 +15,7 @@ This website was created with the intention to store and easily share recipes. T
 ## Wireframes ##
 
 ### index Page ###
-![](images/static/images/index.png)
+<img src="/static/img/index.png">
 
 ### Category Page ###
 
