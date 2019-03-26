@@ -1,23 +1,25 @@
 {% extends 'base.html' %} {% block content%}
-  <div class="card-panel center teal white-text lighten-2"><h4>Add Recipe</h3></div>
+<div class="card-panel center teal white-text lighten-2">
+  <h4>Edit Recipe</h4>
+</div>
 <div class="row">
-      <form action="{{ url_for('edit_recipe') }}" method ="POST" class="col s6">
-         <label>Recipe Category</label>
-        <select id="category" name="category_name" class="browser-default">
+  <form action="{{ url_for('update_recipe', recipe_id = recipe._id) }}" method= "POST" class="col s6">
+    <label>Recipe Category</label>
+    <select id="category" name="category_name" class="browser-default">
             <option value="" disabled selected>Choose your option</option>
             {% for cat in categories %}
             <option value="{{cat.category_name}}">{{cat.category_name}}</option>
             {% endfor %}
           </select>
-        <div class="row">
-              <div class="input-field col s12">
-                 <i class="material-icons prefix">subject</i>
-                <input id="recipe_name" name="recipe_name" type="text" data-length="25">
-                <label for="input_text">Recipe Name</label>
-              </div>
-        </div>
-        <div class="row">
-    
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">subject</i>
+        <input id="recipe_name" name="recipe_name" type="text" data-length="25">
+        <label for="input_text">Recipe Name</label>
+      </div>
+    </div>
+    <div class="row">
+
       <div class="row">
         <div class="input-field col s4">
           <i class="material-icons prefix">timer</i>
@@ -35,36 +37,36 @@
           <label for="icon_telephone">Person</label>
         </div>
       </div>
-   
-  </div>
-        <div class="row">
-          <div class="input-field col s10">
-             <i class="material-icons prefix">subject</i>
-            <textarea id="recipe_ingredients" name="recipe_ingredients" class="materialize-textarea" data-length="250"></textarea>
-            <label for="textarea2">Ingredients</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s10">
-             <i class="material-icons prefix">subject</i>
-            <textarea id="recipe_direction" name="recipe_direction" class="materialize-textarea" data-length="1000"></textarea>
-            <label for="textarea2">Recipe Directions</label>
-          </div>
-        </div>
-            <div class="file-field input-field col s10">
-              <div class="btn center">
-                <span> <i class="material-icons">cloud_upload</i> Upload Image(.jpg)</span>
-                <input type="file">
-              </div>
-              <div class="file-path-wrapper">
-                <input id ="recipe_image_url" name="recipe_image_url" class="file-path validate" type="text">
-              </div>
-            </div>
-            <div class="row center col s12">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit Your Recipe
+
+    </div>
+    <div class="row">
+      <div class="input-field col s10">
+        <i class="material-icons prefix">subject</i>
+        <textarea id="recipe_ingredients" name="recipe_ingredients" class="materialize-textarea" data-length="250"></textarea>
+        <label for="textarea2">Ingredients</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s10">
+        <i class="material-icons prefix">subject</i>
+        <textarea id="recipe_direction" name="recipe_direction" class="materialize-textarea" data-length="1000"></textarea>
+        <label for="textarea2">Recipe Directions</label>
+      </div>
+    </div>
+    <div class="file-field input-field col s10">
+      <div class="btn center">
+        <span> <i class="material-icons">cloud_upload</i> Upload Image(.jpg)</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input id="recipe_image_url" name="recipe_image_url" class="file-path validate" type="text">
+      </div>
+    </div>
+    <div class="row center col s12">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit Your Recipe
             <i class="material-icons right">send</i>
             </button>
-            </div>
-      </form>
     </div>
- {% endblock %}
+  </form>
+</div>
+{% endblock %}

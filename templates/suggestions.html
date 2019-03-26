@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZestyApp</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <nav class="navbar" style="padding:0px 20px;">
+        <div class="nav-wrapper">
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="{{url_for('sandwiches')}}">Sandwich</a></li>
+                <li><a href="{{url_for('pastas')}}">Pasta</a></li>
+                <li><a href="{{url_for('vegan')}}">Vegetarian</a></li>
+                <li class="divider"></li>
+                <li><a href="{{url_for('cakes')}}">Cake</a></li>
+            </ul>
+            <div class="nav-wrapper">
+                <a href="{{url_for('get_recipes')}}" class="brand-logo">ZestyApp</a>
+                <a href="{{url_for('get_recipes')}}" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Recipe Categories<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="{{url_for('add_recipe')}}">Add Recipe</a></li>
+                    <li><a href="{{url_for('get_suggestion')}}">Suggestions!</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-nav">
+        <li><a class="sidenav" href="#!" data-target="mobile-nav">Recipe Categories</a></li>
+        <li><a href="{{url_for('add_recipe')}}">Add Recipe</a></li>
+        <li><a href="{{url_for('get_suggestion')}}">Suggestions</a></li>
+    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="card-panel center teal white-text lighten-2">
+                            <h4>Your Suggestions !</h4>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_telephone" type="text" class="validate">
+                            <label for="icon_telephone">Surname</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                    <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">mode_edit</i>
+                                    <textarea id="textarea2" class="materialize-textarea" data-length="250"></textarea>
+                                    <label for="icon_prefix2">Your Suggestions</label>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="footer">
+            Created By Kevin Gurol with <a class="blue-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            <a href="https://github.com/KevinG555/mongodb/blob/master/README.md" class="href"><img class="center" src ="/static/img/icons8-github-26.png"></a>
+        </div>
+    </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown();
+            $('select').formSelect();
+            $('.modal').modal();
+            $('input#input_text, textarea#textarea2').characterCounter();
+        });
+    </script>
+
+    <body>
+
+</html>
