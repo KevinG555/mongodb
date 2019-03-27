@@ -53,7 +53,7 @@ def edit_recipe(recipe_id):
     return render_template('editrecipe.html', recipe=the_recipe,
                            categories=all_categories)    
     
-@app.route('/update_recipe/<recipe_id>', methods=["POST", ])
+@app.route('/update_recipe/<the_recipe>', methods=["POST", ])
 def update_recipe(recipe_id):
     recipes = mongo.db.recipes
     recipes.update( {'_id': ObjectId(recipe_id)},

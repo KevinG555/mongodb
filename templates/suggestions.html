@@ -10,8 +10,17 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_yseDa2ingwQflEEU3NI2h");
+            emailjs.send("gmail","zestyapp", {
+                name: "ZestyApp",
+                notes: "The suggestions that I want is..."
+            })
+        })();
+    </script>
 </head>
-
 <body>
     <nav class="navbar" style="padding:0px 20px;">
         <div class="nav-wrapper">
