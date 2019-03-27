@@ -14,10 +14,6 @@
     <script type="text/javascript">
         (function() {
             emailjs.init("user_yseDa2ingwQflEEU3NI2h");
-            emailjs.send("gmail","zestyapp", {
-                name: "ZestyApp",
-                notes: "The suggestions that I want is..."
-            })
         })();
     </script>
 </head>
@@ -80,7 +76,7 @@
                         </form>
                     </div>
                     <div class="row">
-                        <form class="col s12">
+                        <form onsubmit="return sendMail(this);" method="POST" class="col s12">
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">mode_edit</i>
@@ -112,7 +108,7 @@
             $('input#input_text, textarea#textarea2').characterCounter();
         });
     </script>
-
+    <script src="assets/js/sendEmail.js"></script>
     <body>
 
 </html>
