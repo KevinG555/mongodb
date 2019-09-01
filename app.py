@@ -19,7 +19,8 @@ def get_recipes():
 def get_suggestion():             
     return render_template("suggestions.html")   
     
-    
+# EDIT OR DELETE PAGE WITHIN CATEGORIES
+ 
 @app.route("/sandwiches", methods=['GET','POST'])
 def sandwiches():
     if request.method == 'POST':
@@ -30,17 +31,35 @@ def sandwiches():
         
     return render_template("sandwiches.html", recipes=mongo.db.recipes.find({"category_name": "Sandwich"})) 
 
-@app.route("/cakes")
+@app.route("/cakes", methods=['GET','POST'])
 def cakes():
-    return render_template("cakes.html", recipes=mongo.db.recipes.find({"category_name": "Cake"}))        
+    if request.method == 'POST':
+        id = request.form['recipe_id']
+        #print(id)
+        mongo.db.recipes.remove( {'_id' : ObjectId(id)  } )
+        return redirect(url_for('get_recipes'))
         
-@app.route("/pastas")
-def pastas():
-    return render_template("pasta.html", recipes=mongo.db.recipes.find({"category_name": "Pasta"})) 
+    return render_template("cakes.html", recipes=mongo.db.recipes.find({"category_name": "Cake"})) 
 
-@app.route("/vegan")
+@app.route("/pastas", methods=['GET','POST'])
+def pastas():
+    if request.method == 'POST':
+        id = request.form['recipe_id']
+        #print(id)
+        mongo.db.recipes.remove( {'_id' : ObjectId(id)  } )
+        return redirect(url_for('get_recipes'))
+        
+    return render_template("pasta.html", recipes=mongo.db.recipes.find({"category_name": "Pasta"})) 
+    
+@app.route("/vegan", methods=['GET','POST'])
 def vegan():
-    return render_template("vegan.html", recipes=mongo.db.recipes.find({"category_name": "Vegetarian"}))
+    if request.method == 'POST':
+        id = request.form['recipe_id']
+        #print(id)
+        mongo.db.recipes.remove( {'_id' : ObjectId(id)  } )
+        return redirect(url_for('get_recipes'))
+        
+    return render_template("vegan.html", recipes=mongo.db.recipes.find({"category_name": "Vegetarian"})) 
 
 @app.route("/add_recipe", methods=['GET', 'POST'])
 def add_recipe():
@@ -50,11 +69,7 @@ def add_recipe():
         return redirect(url_for('get_recipes'))
     return render_template("addrecipe.html", categories = mongo.db.categories.find())
     
-#@app.route("/edit_recipe", methods=['GET'])
-#def insert_recipe():
-    #recipes = mongo.db.recipes
-    #recipes.insert_one(request.form.to_dict())
-    #return redirect(url_for('get_recipes'))
+
     
 @app.route('/edit_recipe', methods=['GET','POST'])
 def edit_recipe():
