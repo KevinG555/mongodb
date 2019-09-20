@@ -82,9 +82,6 @@ This website was created with the intention to store and easily share recipes. T
   
   AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser.   It includes a code editor, debugger, and terminal.
   
-  ## Testing ##
-  
-  On mobile Phones links in the cards don't show up if Recipe Name is too long. It is tested by [Chrome Dev Tools]     (https://developers.google.com/web/tools/chrome-devtools/) for each screen size and it's responsive.
   
   ## Deployment ##
   
